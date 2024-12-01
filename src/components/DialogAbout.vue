@@ -9,7 +9,7 @@
 							<div class="">
 							   <div class="mx-auto max-w-3xl text-base/7 text-gray-700">
 									<h1 class="mt-2 text-pretty text-2xl font-semibold tracking-tight text-gray-900">Shortcut Organizer</h1>
-									<p class="mb-2">Version: 1.0.0</p>
+									<p class="mb-2">Version: 1.0</p>
 									<p>Shortcut Organizer est une extension Chrome conçue pour offrir une expérience de navigation améliorée. Elle remplace la page de démarrage par défaut par un tableau de bord élégant et personnalisable, vous permettant de gérer vos raccourcis favoris de manière organisée et efficace.</p>
 									
 									<h2 class="mt-6 text-pretty text-2xl font-semibold tracking-tight text-gray-900">Notre objectif</h2>
