@@ -43,8 +43,8 @@ Avant de commencer, assurez-vous d'avoir :
 
 1. Clonez ou téléchargez ce dépôt :
    ```bash
-   git clone https://github.com/votre-repo/shortcut-organizer.git
-   cd grouped-shortcuts-dashboard
+   git clone https://github.com/xranto/shortcut-organizer.git
+   cd shortcut-organizer
    ```
 2. Installez les dépendances nécessaires :
    ```bash
