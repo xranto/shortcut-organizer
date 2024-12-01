@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Shortcut Organizer",
+  "description": "Shortcut Organizer",
+  "version": "1.0.0",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "incognito": "split",
+  "permissions": [
+    "storage",
+    "favicon"
+  ],
+  "icons": {
+   "128": "extension_icon128.png"
+  }
+}
