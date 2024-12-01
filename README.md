@@ -52,20 +52,13 @@ Avant de commencer, assurez-vous d'avoir :
    ```
 3. Pour lancer le mode développement et tester localement :
    ```bash
-   npm run dev
+   npm run build
    ```
 4. Accédez à [chrome://extensions](chrome://extensions) dans votre navigateur Chrome.
 5. Activez le **mode développeur** (coin supérieur droit).
 6. Cliquez sur **Charger l'extension non empaquetée**.
-7. Sélectionnez le dossier où se trouve votre projet (qui contient le fichier `manifest.json`).
+7. Sélectionnez le dossier `dist`.
 
-### Build pour Production
-
-Pour générer une version prête à être publiée :
-```bash
-npm run build
-```
-Le dossier `dist` contiendra les fichiers finaux de votre extension.
 
 ### Gestion de la version
 
