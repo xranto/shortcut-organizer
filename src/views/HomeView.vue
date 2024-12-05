@@ -149,7 +149,9 @@
 					}
 					if (items && items.categories){
 						this.categories_data = items.categories;
-						this.set_current_directory(this.categories_data.at(-1))
+						if(this.categories_data.length){
+							this.set_current_directory(this.categories_data.at(-1))
+						}
 					}
 					
 				});

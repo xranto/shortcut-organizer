@@ -9,11 +9,11 @@ import vue from '@vitejs/plugin-vue';
 import {
 	execSync
 } from 'child_process';
+import { resolve } from 'path'; // Nécessaire pour la configuration des chemins
 
 export default defineConfig({
 	plugins: [
 		vue(),
-		
 	],
 	resolve: {
 		alias: {
@@ -23,6 +23,10 @@ export default defineConfig({
 	build: {
 		emptyOutDir: false,
 		rollupOptions: {
+			input: {
+				main: resolve(__dirname, 'index.html'), // Fichier index.html
+				popup: resolve(__dirname, 'popup.html'), // Fichier popup.html
+			},
 			plugins: [{
 				name: 'update-version',
 				buildStart() {

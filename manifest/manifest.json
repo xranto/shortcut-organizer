@@ -6,10 +6,15 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "favicon.png"
+  },
   "incognito": "split",
   "permissions": [
     "storage",
-    "favicon"
+    "favicon",
+	"tabs"
   ],
   "icons": {
    "128": "extension_icon128.png"

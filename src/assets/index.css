@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body.mainpage {
 	background-image: url("pexels-jplenio-1103970.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	min-height: 100vh;
+}
+
+.popup .content-wrap{
+	width: 400px;
+	padding: 20px;
 }
