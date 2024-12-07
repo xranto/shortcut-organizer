@@ -25,7 +25,7 @@ async function askUser(question) {
 (async () => {
 	try {
 		// Vérifier si le fichier local-version.txt existe
-		let currentVersion = '1.0.1';
+		let currentVersion = '1.0.17.0';
 		if (fs.existsSync(versionFilePath)) {
 			currentVersion = fs.readFileSync(versionFilePath, 'utf8').trim();
 		} else {

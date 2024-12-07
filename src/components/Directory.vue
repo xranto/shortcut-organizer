@@ -7,8 +7,13 @@
 	>
 		<button 
 			@drop.prevent="dropShortcut"
-			@dragenter.prevent @dragover.prevent
+			
+			@dragenter="onDragEnter"
+			@dragleave="onDragLeave"
+			@dragover.prevent
+			
 			class="text-left w-full group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+			:class="{ 'bg-sky-500': isDragover }"
 			v-on:click="handleClick"
 		>
 			<svg v-if="true == false" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -51,9 +56,20 @@
 </script>
 <script>
 	export default {
+		data() {
+			return {
+				isDragover: false,
+			}
+		},
 		methods: {
+			onDragEnter(ev) {
+				this.isDragover = true;
+			},
+			onDragLeave(ev) {
+				this.isDragover = false;
+			},
 			dropShortcut(ev) {
-				
+				this.isDragover = false;
 				if(this.shortcut_dragged){
 					this.$emit('shortcut_dropped', this.directory);
 				}

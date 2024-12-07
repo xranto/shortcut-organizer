@@ -60,7 +60,7 @@
 		"message": "Veuillez choisir un dossier."
 	},
 	"pageAlreadyExist": {
-		"message": "Veuillez choisir un dossier."
+		"message": "Cette page est déjà enregistrée dans votre page de démarrage."
 	},
 	"aboutDescription": {
 		"message": "Shortcut Organizer est une extension Chrome conçue pour offrir une expérience de navigation améliorée. Elle remplace la page de démarrage par défaut par un tableau de bord élégant et personnalisable, vous permettant de gérer vos raccourcis favoris de manière organisée et efficace."

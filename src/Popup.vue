@@ -15,11 +15,34 @@
 					<div class="mt-5 sm:ml-10 sm:mt-4 sm:flex sm:pl-4">
 						<label for="url" class="block text-sm/6 font-medium text-gray-900">{{ t('labelUrl') }}</label>
 						<div class="mt-2">
-							<input v-model="url" type="text" name="url" id="url" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" >
+							<input v-on:input="check_timed" v-model="url" type="text" name="url" id="url" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" >
 						</div>
 						<p v-if="empty_url" class="mt-2 text-sm text-red-600" id="email-error">{{ t('fieldEmpty') }}</p>
 					</div>
-					
+					<template  v-if="!valid_url">
+								<div class="mt-2 border-l-4 border-yellow-400 bg-yellow-50 p-4">
+									<div class="flex">
+										<div class="flex-shrink-0">
+											<svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+											<path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+										</svg>
+									</div>
+									<div class="ml-3">
+										<p class="text-sm text-yellow-700">
+											{{ t('labelMailFormatError') }} 
+										</p>
+									</div>
+								  </div>
+								</div>
+								<div class="mt-2 relative flex items-start">
+									<div class="flex h-6 items-center">
+										<input v-model="confirm_url" id="confirm_url" aria-describedby="confirm_url-description" name="confirl_url" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+									</div>
+									<div  class="ml-3 text-sm leading-6" >
+										<span id="confirm_url-description" class="text-gray-500">{{ t('labelConfirmMailFormat') }}</span>
+									</div>
+								</div>
+					</template>
 					<div v-if="add_new_category" class="mt-5 sm:ml-10 sm:mt-4 sm:flex sm:pl-4">
 						<label for="new_category" class="block text-sm/6 font-medium text-gray-900">{{ t('labelDirectory') }}</label>
 						<div class="mt-2">
@@ -69,6 +92,10 @@
 				drag: false,
 				shortcut_dragged: null,
 				already_saved: false,
+				
+				valid_url: true,
+				check_timeout: false,
+				confirm_url: false,
 				
 				add_new_category: false,
 				new_category: "",
@@ -166,6 +193,12 @@
 						return;
 					}
 					
+					if ( !this.check_url()){
+						if (!this.confirm_url ){
+							return;
+						}
+					}
+					
 					if (this.add_new_category){
 						dir_id = this.save_directory(this.new_category);
 					}
@@ -220,6 +253,27 @@
 						chrome.storage.local.set({ categories: toRaw(this.categories_data) });
 					}
 					return new_cat.id;
+			},
+			check_timed() {
+				
+				var that = this;
+				if(that.check_timeout){
+					clearTimeout(that.check_timeout);
+				}
+				if (this.url == ""){
+					that.valid_url = true;
+					return;
+				}
+				that.check_timeout = setTimeout(function(){
+					that.valid_url = that.check_url()
+				}, 1000);
+			},
+			check_url() {
+				if (this.url == ""){
+					return;
+				}
+				const prefixes = ["http://", "https://", "mailto:"];
+				return prefixes.some(prefix => this.url.startsWith(prefix));
 			},
 		}
 	}
