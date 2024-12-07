@@ -21,10 +21,10 @@
 							</svg>
 						</div>
 						<div class="mt-3 flex-1 text-center sm:ml-4 sm:mt-0 sm:text-left">
-							<h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Ajout d'un dossier</h3>
+							<h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">{{ t('dlgtitleAddDirectory') }}</h3>
 							<div class="mt-2">
 								<div>
-									<label for="new_dir_name" class="block text-sm font-medium leading-6 text-gray-900">Nom *</label>
+									<label for="new_dir_name" class="block text-sm font-medium leading-6 text-gray-900">{{ t('labelName') }} *</label>
 									<div class="mt-2">
 										<input 
 											ref="new_dir_name" 
@@ -38,8 +38,8 @@
 						</div>
 					</div>
 					<div class="mt-5 sm:ml-10 sm:mt-4 sm:flex sm:pl-4">
-						<button v-on:click="save_directory" type="button" class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:col-start-2">Enregistrer</button>
-						<button v-on:click="hide_directory_dlg" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:ml-3 sm:mt-0 sm:w-auto">Annuler</button>
+						<button v-on:click="save_directory" type="button" class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:col-start-2">{{ t('buttonSave') }}</button>
+						<button v-on:click="hide_directory_dlg" type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:ml-3 sm:mt-0 sm:w-auto">{{ t('buttonCancel') }}</button>
 					</div>
 				</div>
 			</form>

@@ -1,0 +1,110 @@
+{
+	"appDescription": {
+		"message": "Extension Chrome offrant un tableau de bord élégant et personnalisable pour organiser vos raccourcis web."
+	},
+	"appName": {
+		"message": "Shortcut Organizer"
+	},
+	"newTabTitle": {
+		"message": "Nouvel onglet"
+	},
+	"menuAddDirectory": {
+		"message": "Dossier"
+	},
+	"menuAbout": {
+		"message": "A propos de"
+	},
+	"dlgtitleAddShortcut": {
+		"message": "Ajout d'un raccourci"
+	},
+	"dlgtitleAddDirectory": {
+		"message": "Ajout d'un dossier"
+	},
+	"labelName": {
+		"message": "Nom"
+	},
+	"labelTitle": {
+		"message": "Titre"
+	},
+	"labelUrl": {
+		"message": "URL"
+	},
+	"labelDirectory": {
+		"message": "Dossier"
+	},
+	"buttonSave": {
+		"message": "Enregistrer"
+	},
+	"buttonCancel": {
+		"message": "Annuler"
+	},
+	"buttonClose": {
+		"message": "Fermer"
+	},
+	"labelMailFormatError": {
+		"message": "L'URL que vous avez saisie semble être incorrecte."
+	},
+	"labelConfirmMailFormat": {
+		"message": "Je confirme que cette URL est correcte."
+	},
+	"ctxMenuEdit": {
+		"message": "Modifier."
+	},
+	"ctxMenuDelete": {
+		"message": "Supprimer."
+	},
+	"fieldEmpty": {
+		"message": "Veuillez remplir ce champ."
+	},
+	"directoryEmpty": {
+		"message": "Veuillez choisir un dossier."
+	},
+	"pageAlreadyExist": {
+		"message": "Veuillez choisir un dossier."
+	},
+	"aboutDescription": {
+		"message": "Shortcut Organizer est une extension Chrome conçue pour offrir une expérience de navigation améliorée. Elle remplace la page de démarrage par défaut par un tableau de bord élégant et personnalisable, vous permettant de gérer vos raccourcis favoris de manière organisée et efficace."
+	},
+	"aboutObjectifTitle": {
+		"message": "Notre objectif"
+	},
+	"aboutObjectifContent": {
+		"message": "Faciliter l'accès rapide à vos sites web préférés tout en vous offrant la possibilité d'organiser vos raccourcis selon vos besoins. Que vous soyez un professionnel cherchant à organiser vos outils ou un utilisateur qui souhaite personnaliser sa navigation, Shortcut Organizer est conçu pour vous."
+	},
+	"osTitle": {
+		"message": "Projet Open Source"
+	},
+	"osContent": {
+		"message": "Ce projet est entièrement open source. Vous pouvez consulter le code source, proposer des améliorations et contribuer au développement directement sur GitHub. Nous croyons en l'esprit de collaboration et en l'importance de partager les outils qui simplifient la vie numérique. Rejoignez-nous pour améliorer encore plus Shortcut Organizer."
+	},
+	"creditTitle": {
+		"message": "Crédits"
+	},
+	"creditConception": {
+		"message": "Conception et développement"
+	},
+	"creditBackgroundImage": {
+		"message": "Image d'arrière-plan : Photo de Johannes Plenio, disponible sur"
+	},
+	"policyTitle": {
+		"message": "Politique de confidentialité"
+	},
+	"policyContent": {
+		"message": "<p>Nous respectons votre confidentialité et nous engageons à protéger vos données.</p><ul class='list-disc pl-4'><li>Cette extension <b>ne collecte ni ne partage aucune donnée personnelle.</b></li><li>Toutes les informations que vous ajoutez à l’extension (comme vos raccourcis ou dossiers) sont stockées <b>localement sur votre appareil</b>, en utilisant l’API chrome.storage.</li><li>Aucune donnée n’est envoyée ou partagée avec des tiers.</li></ul>"
+	},
+	"permissionsTitle": {
+		"message": "Permissions utilisées"
+	},
+	"permissionsStorage": {
+		"message": "Cette permission est utilisée uniquement pour enregistrer vos raccourcis et paramètres de manière locale."
+	},
+	"permissionsTab": {
+		"message": "Cette permission est utilisée pour récupérer automatiquement le titre et l'URL de l'onglet actif lorsque vous cliquez sur l'icône de l'extension. Cela permet d'ajouter rapidement un raccourci tout en vous offrant la possibilité de le modifier et de le classer dans un dossier."
+	},
+	"licenseTitle": {
+		"message": "Licence"
+	},
+	"licenseContent": {
+		"message": "Ce projet est distribué sous la licence MIT. Vous êtes libre de l'utiliser, de le modifier et de le partager dans les termes de cette licence."
+	}
+}

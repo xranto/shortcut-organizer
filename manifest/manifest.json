@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Shortcut Organizer",
-  "description": "Extension Chrome offrant un tableau de bord élégant et personnalisable pour organiser vos raccourcis web.",
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDescription__",
+  "default_locale": "fr",
   "version": "1.0.0",
   "chrome_url_overrides": {
     "newtab": "index.html"

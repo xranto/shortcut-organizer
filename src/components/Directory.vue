@@ -77,14 +77,14 @@
 					theme: 'flat',
 					items: [
 						{ 
-							label: "Modifier", 
+							label: this.t("ctxMenuEdit"), 
 							svgIcon: "#edit",
 							onClick: () => {
 								that.edit();
 							}
 						},
 						{ 
-							label: "Supprimer", 
+							label: this.t("ctxMenuDelete"), 
 							svgIcon: "#delete",
 							onClick: () => {
 								that.remove();

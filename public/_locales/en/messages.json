@@ -1,0 +1,110 @@
+{
+	"appDescription": {
+		"message": "Chrome extension offering a sleek and customizable dashboard to organize your web shortcuts."
+	},
+	"appName": {
+		"message": "Shortcut Organizer"
+	},
+	"newTabTitle": {
+		"message": "New tab"
+	},
+	"menuAddDirectory": {
+		"message": "Folder"
+	},
+	"menuAbout": {
+		"message": "About"
+	},
+	"dlgtitleAddShortcut": {
+		"message": "Add a Shortcut"
+	},
+	"dlgtitleAddDirectory": {
+		"message": "Add a Folder"
+	},
+	"labelName": {
+		"message": "Name"
+	},
+	"labelTitle": {
+		"message": "Title"
+	},
+	"labelUrl": {
+		"message": "URL"
+	},
+	"labelDirectory": {
+		"message": "Folder"
+	},
+	"buttonSave": {
+		"message": "Save"
+	},
+	"buttonCancel": {
+		"message": "Cancel"
+	},
+	"buttonClose": {
+		"message": "Close"
+	},
+	"labelMailFormatError": {
+		"message": "The URL you entered seems to be incorrect."
+	},
+	"labelConfirmMailFormat": {
+		"message": "I confirm this URL is correct."
+	},
+	"ctxMenuEdit": {
+		"message": "Edit"
+	},
+	"ctxMenuDelete": {
+		"message": "Delete"
+	},
+	"fieldEmpty": {
+		"message": "Please fill out this field."
+	},
+	"directoryEmpty": {
+		"message": "Please select a folder."
+	},
+	"pageAlreadyExist": {
+		"message": "This page is already saved to your start page."
+	},
+	"aboutDescription": {
+		"message": "Shortcut Organizer is a Chrome extension designed to offer an enhanced browsing experience. It replaces the default start page with a sleek and customizable dashboard, allowing you to manage your favorite shortcuts in an organized and efficient way."
+	},
+	"aboutObjectifTitle": {
+		"message": "Our Goal"
+	},
+	"aboutObjectifContent": {
+		"message": "Facilitate quick access to your favorite websites while offering you the ability to organize your shortcuts according to your needs. Whether you're a professional looking to organize your tools or a user who wants to personalize their browsing, Shortcut Organizer is designed for you."
+	},
+	"osTitle": {
+		"message": "Open Source Project"
+	},
+	"osContent": {
+		"message": "This project is entirely open source. You can review the source code, suggest improvements, and contribute to the development directly on GitHub. We believe in the spirit of collaboration and the importance of sharing tools that simplify digital life. Join us to further enhance Shortcut Organizer."
+	},
+	"creditTitle": {
+		"message": "Credits"
+	},
+	"creditConception": {
+		"message": "Design and Development"
+	},
+	"creditBackgroundImage": {
+		"message": "Background Image: Photo by Johannes Plenio, available on"
+	},
+	"policyTitle": {
+		"message": "Privacy Policy"
+	},
+	"policyContent": {
+		"message": "<p>We respect your privacy and are committed to protecting your data.</p><ul class='list-disc pl-4'><li>This extension <b>does not collect or share any personal data.</b></li><li>All the information you add to the extension (such as your shortcuts or folders) is stored <b>locally on your device</b>, using the chrome.storage API.</li><li>No data is sent or shared with third parties.</li></ul>"
+	},
+	"permissionsTitle": {
+		"message": "Permissions Used"
+	},
+	"permissionsStorage": {
+		"message": "This permission is only used to save your shortcuts and settings locally."
+	},
+	"permissionsTab": {
+		"message": "This permission is used to automatically retrieve the title and URL of the active tab when you click on the extension icon. It allows you to quickly add a shortcut while giving you the option to edit it and organize it into a folder."
+	},
+	"licenseTitle": {
+		"message": "License"
+	},
+	"licenseContent": {
+		"message": "This project is distributed under the MIT license. You are free to use, modify, and share it under the terms of this license."
+	}
+}
