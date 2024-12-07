@@ -17,12 +17,12 @@
 - **Modifier les raccourcis existants**.
 - Trier et réorganiser les raccourcis par **drag & drop**.
 - **Déplacer un raccourci** d’un dossier à un autre via **drag & drop**.
+- Ajouter un raccourci directement en cliquant sur une icône dans la barre de navigation.
 
 ### **Icônes automatiques**
 - Les raccourcis récupèrent automatiquement l’icône du site web pour une présentation visuelle claire et esthétique.
 
 ### **Idées futures**
-- Ajouter un raccourci directement en cliquant sur une icône dans la barre de navigation.
 - Personnalisation du thème ou de l’arrière-plan.
 - Import/export des raccourcis pour les sauvegarder ou les partager.
 - Synchronisation des raccourcis avec un compte Google.
