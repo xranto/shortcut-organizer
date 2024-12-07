@@ -99,6 +99,13 @@ Merci de garder un code clair et cohérent pour faciliter les contributions.
 
 ---
 
+## Suggestions et Retours d'Expérience
+
+Nous valorisons les retours de nos utilisateurs et travaillons continuellement à améliorer Shortcut Organizer.  
+Vous pouvez consulter les [suggestions et retours d'expérience](FEEDBACK.md) pour en savoir plus sur les idées prévues ou proposer vos propres améliorations.
+
+---
+
 ## Licence
 
 Ce projet est distribué sous la licence [MIT](https://opensource.org/licenses/MIT).
