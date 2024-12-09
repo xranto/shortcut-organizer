@@ -44,6 +44,7 @@
 							</li>
 						</ul>
 						<button v-on:click="show_about_dlg" class="w-full text-gray-400 mb-3 text-left">{{ t('menuAbout') }}</button>
+						<RouterLink to="/setting" class="w-full text-gray-400 mb-3 text-left">{{ t('menuSetting') }}</RouterLink>
 					</nav>
 				</div>
 			</div>

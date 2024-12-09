@@ -14,6 +14,9 @@
 	"menuAbout": {
 		"message": "A propos de"
 	},
+	"menuSetting": {
+		"message": "Paramètres"
+	},
 	"dlgtitleAddShortcut": {
 		"message": "Ajout d'un raccourci"
 	},
