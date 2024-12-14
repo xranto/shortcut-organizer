@@ -109,5 +109,106 @@
 	},
 	"licenseContent": {
 		"message": "This project is distributed under the MIT license. You are free to use, modify, and share it under the terms of this license."
+	},
+	"enterTerm": {
+		"message": "Please enter a search term."
+	},
+	"searchPlaceholder": {
+		"message": "Search on "
+	},
+	"menuBack": {
+		"message": "Back"
+	},
+	"menuPersonnalisation": {
+		"message": "Customization"
+	},
+	"menuSearch": {
+		"message": "Search"
+	},
+	"setIdxSubtitlePersonnalisation": {
+		"message": "Start page, Background image"
+	},
+	"setIdxSubtitleSearch": {
+		"message": "Search bar, Search engine"
+	},
+	"setStartPage": {
+		"message": "Start page"
+	},
+	"setLastDir": {
+		"message": "Last folder"
+	},
+	"setLastDirMsg": {
+		"message": "Display the last accessed folder."
+	},
+	"setFirstDir": {
+		"message": "First folder"
+	},
+	"setFirstDirMsg": {
+		"message": "Display the first folder in the list."
+	},
+	"setDirList": {
+		"message": "Folder list"
+	},
+	"setDirListMsg": {
+		"message": "Display a list of folders."
+	},
+	"setEmptyPage": {
+		"message": "Empty page"
+	},
+	"setEmptyPageMsg": {
+		"message": "Display an empty page."
+	},
+	"setBgImage": {
+		"message": "Background image"
+	},
+	"setBgImageDefault": {
+		"message": "Default background image"
+	},
+	"setBgImageDefaultMsg": {
+		"message": "Display the default background image."
+	},
+	"setBgImageCustom": {
+		"message": "Custom background image"
+	},
+	"setBgImageCustomMsg": {
+		"message": "Display your own image."
+	},
+	"setUploadFile": {
+		"message": "Upload a file"
+	},
+	"setDND": {
+		"message": "or drag and drop"
+	},
+	"setUploadLimit": {
+		"message": "PNG, JPG, WEBP up to 5 MB"
+	},
+	"setNoFileSelected": {
+		"message": "No file selected."
+	},
+	"setBadFile": {
+		"message": "Unsupported file type. Please select a JPG, PNG, or WEBP file."
+	},
+	"setFileOverSize": {
+		"message": "The file is too large. The maximum size is 5 MB."
+	},
+	"setSearchBar": {
+		"message": "Search bar"
+	},
+	"setShowSearchBar": {
+		"message": "Show"
+	},
+	"setShowSearchBarMsg": {
+		"message": "Show the search bar."
+	},
+	"setHideSearchBar": {
+		"message": "Hide"
+	},
+	"setHideSearchBarMsg": {
+		"message": "Hide the search bar."
+	},
+	"setSearchEngine": {
+		"message": "Search engine"
 	}
+
+
 }

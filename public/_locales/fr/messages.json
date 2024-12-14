@@ -109,5 +109,104 @@
 	},
 	"licenseContent": {
 		"message": "Ce projet est distribué sous la licence MIT. Vous êtes libre de l'utiliser, de le modifier et de le partager dans les termes de cette licence."
+	},
+	"enterTerm": {
+		"message": "Veuillez entrer un terme de recherche."
+	},
+	"searchPlaceholder": {
+		"message": "Rechercher sur "
+	},
+	"menuBack": {
+		"message": "Retour"
+	},
+	"menuPersonnalisation": {
+		"message": "Personnalisation"
+	},
+	"menuSearch": {
+		"message": "Recherche"
+	},
+	"setIdxSubtitlePersonnalisation": {
+		"message": "Page de démarrage, Image de fond"
+	},
+	"setIdxSubtitleSearch": {
+		"message": "Barre de recherche, Moteur de recherche"
+	},
+	"setStartPage": {
+		"message": "Page de démarrage"
+	},
+	"setLastDir": {
+		"message": "Le dernier dossier"
+	},
+	"setLastDirMsg": {
+		"message": "Afficher le dernier dossier consulté."
+	},
+	"setFirstDir": {
+		"message": "Le premier dossier"
+	},
+	"setFirstDirMsg": {
+		"message": "Afficher le premier dossier de la liste de dossiers."
+	},
+	"setDirList": {
+		"message": "Liste des dossiers"
+	},
+	"setDirListMsg": {
+		"message": "Afficher une liste des dossiers."
+	},
+	"setEmptyPage": {
+		"message": "Page vierge"
+	},
+	"setEmptyPageMsg": {
+		"message": "Afficher une page vierge."
+	},
+	"setBgImage": {
+		"message": "Image de fond"
+	},
+	"setBgImageDefault": {
+		"message": "Image de fond par défaut"
+	},
+	"setBgImageDefaultMsg": {
+		"message": "Afficher l'image de fond par défaut."
+	},
+	"setBgImageCustom": {
+		"message": "Image de fond personnalisée"
+	},
+	"setBgImageCustomMsg": {
+		"message": "Afficher votre propre image."
+	},
+	"setUploadFile": {
+		"message": "Importer un fichier"
+	},
+	"setDND": {
+		"message": "ou glisser-déposer"
+	},
+	"setUploadLimit": {
+		"message": "PNG, JPG, WEBP jusqu'à 5 Mo"
+	},
+	"setNoFileSelected": {
+		"message": "Aucun fichier sélectionné."
+	},
+	"setBadFile": {
+		"message": "Type de fichier non supporté. Veuillez sélectionner un fichier JPG, PNG ou WEBP."
+	},
+	"setFileOverSize": {
+		"message": "Le fichier est trop volumineux. La taille maximale est de 5 Mo."
+	},
+	"setSearchBar": {
+		"message": "Barre de recherche"
+	},
+	"setShowSearchBar": {
+		"message": "Afficher"
+	},
+	"setShowSearchBarMsg": {
+		"message": "Afficher la barre de recherche."
+	},
+	"setHideSearchBar": {
+		"message": "Ne pas afficher"
+	},
+	"setHideSearchBarMsg": {
+		"message": "Ne pas afficher la barre de recherche."
+	},
+	"setSearchEngine": {
+		"message": "Moteur de recherche"
 	}
 }

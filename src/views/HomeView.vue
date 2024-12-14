@@ -50,6 +50,36 @@
 			</div>
 			<main class="py-10 pl-52">
 				<div class="px-4 sm:px-6 lg:px-8">
+					<SearchBar v-if="showsearch" />
+					{{ bgimage_url }}
+					<!-- Directory List -->
+					<div v-if="current_directory == null && startpage == 'dir-list'">
+						<div>
+							<draggable 
+											:list="categories_data" 
+											@start="drag=true" 
+											@end="drag=false" 
+											item-key="id"
+											v-bind="dragOptions"
+											group="directory" 
+											@change="directory_order_change"
+											class="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4"
+										>
+											<template #item="{element}">
+												<DirectoryIcon 
+													:shortcut_dragged="shortcut_dragged"
+													:directory="element"
+													:current="element.id == current_directory?.id"
+													v-on:eclick="set_current_directory"
+													v-on:edit="edit_directory"
+													v-on:remove="remove_directory"
+													v-on:shortcut_dropped="shortcut_dropped"
+												/>
+											</template>
+									</draggable>
+						</div>
+					</div>
+					<!-- /Directory List -->
 					<!-- Shortcut List -->
 					<div>
 						<div>
@@ -91,18 +121,23 @@
 	</main>
 </template>
 <script setup>
+	import DirectoryIcon from '../components/DirectoryIcon.vue'
 	import Directory from '../components/Directory.vue'
 	import DialogDirectory from '../components/DialogDirectory.vue'
 	import DialogShortcut from '../components/DialogShortcut.vue'
 	import DialogAbout from '../components/DialogAbout.vue'
 	import Icon from '../components/Icon.vue'
+	import SearchBar from '../components/SearchBar.vue'
 	import { isProxy, toRaw } from 'vue';
 	import draggable from 'vuedraggable'
+	
+	
 </script>
-<script>	
+<script>
+	import { useBackgroundImage } from '../composables/useBackgroundImage';
 	export default {
 		components: {
-			Directory, DialogDirectory, DialogShortcut, Icon, draggable, DialogAbout
+			DirectoryIcon, Directory, DialogDirectory, DialogShortcut, Icon, draggable, DialogAbout, SearchBar
 		},
 		data() {
 			return {
@@ -116,7 +151,13 @@
 				current_directory_edit: null,
 				current_shortcut_edit: null,
 				drag: false,
-				shortcut_dragged: null
+				shortcut_dragged: null,
+				
+				startpage: 'last-dir',
+				bgimage: 'default',
+				showsearch: false,
+				bgimage: null,
+				bgimage_url: ""
 			}
 		},
 		computed: {
@@ -144,18 +185,70 @@
 				this.enable_chrome = true;
 			}
 			if(this.enable_chrome){
-				chrome.storage.local.get().then((items) => {
+				chrome.storage.local.get(['shortcuts', 'categories', 'startpage', 'bgimage', 'lastdir', 'showsearch']).then((items) => {
+					let last_dir_id = "";
+					if (items && items.startpage){
+						this.startpage = items.startpage;
+					}
+					if (items && items.bgimage){
+						this.bgimage  = items.bgimage;
+						if(this.bgimage != 'default'){
+							const { loadBackground, backgroundUrl } = useBackgroundImage();
+
+							loadBackground().then(() => {
+								
+								if (backgroundUrl.value) {
+									document.body.style.backgroundImage = `url('${backgroundUrl.value}')`;
+									document.body.style.backgroundSize = 'cover'; 
+									document.body.style.backgroundPosition = 'center';
+								} 
+							});
+						}
+					}
+					
 					if (items && items.shortcuts){
 						this.shortcuts_data = items.shortcuts;
 					}
+					if (items && items.lastdir){
+						last_dir_id = items.lastdir;
+					}
+					if (items && items.showsearch){
+						this.showsearch = items.showsearch;
+					}
+					
 					if (items && items.categories){
 						this.categories_data = items.categories;
 						if(this.categories_data.length){
-							this.set_current_directory(this.categories_data.at(-1))
+							console.log(this.categories_data);
+							switch (this.startpage){
+								case "last-dir":
+									const foundItem = this.categories_data.find(item => item.id === last_dir_id);
+									if(foundItem){
+										this.set_current_directory(foundItem);
+									}else{
+										this.set_current_directory(this.categories_data.at(0));
+									}
+									
+								break;
+								case "first-dir":
+									this.set_current_directory(this.categories_data.at(0));
+								break;
+								case "empty-page":
+									
+								break;
+								case "dir-list":
+									
+								break;
+								default:
+								break;
+								
+							}
+							
 						}
 					}
 					
 				});
+				
 			}
 		},
 		methods: {
@@ -395,6 +488,9 @@
 			set_current_directory(d){
 				var that = this;
 				that.current_directory = d;
+				
+				
+				chrome.storage.local.set({ lastdir: d.id });
 				
 				
 				var _shortcuts = that.shortcuts_data.filter(function (obj) {

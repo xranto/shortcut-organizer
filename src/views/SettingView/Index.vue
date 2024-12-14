@@ -10,11 +10,11 @@
 								<p class="text-sm/6 font-semibold text-gray-900">
 									<RouterLink to="/setting/personalization" >
 										<span class="absolute inset-x-0 -top-px bottom-0"></span>
-										Personnalisation
+										{{ t("menuPersonnalisation") }}
 									</RouterLink>
 								</p>
 								<p class="mt-1 flex text-xs/5 text-gray-500">
-									Page de démarrage, Image de fond
+									{{ t("setIdxSubtitlePersonnalisation") }}
 								</p>
 							</div>
 						</div>
@@ -30,11 +30,11 @@
 								<p class="text-sm/6 font-semibold text-gray-900">
 									<RouterLink to="/setting/search" >
 									<span class="absolute inset-x-0 -top-px bottom-0"></span>
-									Recherche
+									{{ t("menuSearch") }}
 									</RouterLink>
 								</p>
 								<p class="mt-1 flex text-xs/5 text-gray-500">
-									Barre de recherche, Moteur de recherche
+									{{ t("setIdxSubtitleSearch") }}
 								</p>
 							</div>
 						</div>

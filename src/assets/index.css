@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+	min-height: 100vh;
+}
 body.mainpage:not(.setting-page) {
 	background-image: url("pexels-jplenio-1103970.jpg");
 	background-size: cover;
@@ -10,7 +13,15 @@ body.mainpage:not(.setting-page) {
 	min-height: 100vh;
 }
 
+body.setting-page{
+	background-image: none!important;
+}
+
 .popup .content-wrap{
 	width: 400px;
 	padding: 20px;
+}
+
+.shortcut-icon-img{
+	backdrop-filter: brightness(0.8);
 }

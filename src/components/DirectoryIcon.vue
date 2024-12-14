@@ -1,22 +1,25 @@
-<script setup>
-	import ContextMenu from '@imengyu/vue3-context-menu'
-	defineProps({
-		shortcut: {
-			type: [Object, null],
-			required: false
-		},
-	});
-</script>
 <template>
-	<div class="col-span-1 flex rounded-md shadow-sm" v-on:dragstart="dragStart" v-on:dragend="dragEnd">
-		<a :href="shortcut.url"
-			class="shortcut-icon-img flex w-16 flex-shrink-0 items-center justify-center rounded-l-md border border-gray-200"
-		><img :src="icon_url"></a>
-		<div class="flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-gray-200 bg-white">
-			<a :href="shortcut.url" class="flex-1 truncate px-4 py-2 text-sm">
-				<span class="font-medium text-gray-900 hover:text-gray-600">{{ shortcut.label }}</span>
-				<p class="text-gray-500">{{ shortcut.url }}</p>
-			</a>
+	<div 
+		class="col-span-1 flex rounded-md shadow-sm cursor-pointer" 
+		@drop.prevent="dropShortcut"
+			
+		@dragenter="onDragEnter"
+		@dragleave="onDragLeave"
+		@dragover.prevent
+		
+	>
+		<div
+			class="flex w-16 flex-shrink-0 items-center justify-center rounded-l-md border border-gray-200"
+			v-on:click="handleClick"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#FFA000" d="M40,12H22l-4-4H8c-2.2,0-4,1.8-4,4v8h40v-4C44,13.8,42.2,12,40,12z"/><path fill="#FFCA28" d="M40,12H8c-2.2,0-4,1.8-4,4v20c0,2.2,1.8,4,4,4h32c2.2,0,4-1.8,4-4V16C44,13.8,42.2,12,40,12z"/></svg>
+		</div>
+		
+		<div  class="flex flex-1 items-center justify-between truncate rounded-r-md border-b border-r border-t border-gray-200 bg-white">
+			<div v-on:click="handleClick" class="flex-1 truncate px-4 py-2 text-sm">
+				<span class="font-medium text-gray-900 hover:text-gray-600  h-10 flex items-center">{{ directory.label }}</span>
+
+			</div>
 			<div class="flex-shrink-0 pr-2">
 				<button v-on:click="show_option" type="button" class="inline-flex h-8 w-8 items-center justify-center">
 					<span class="sr-only">Options</span>
@@ -34,40 +37,56 @@
 				</svg>
 			</template>
 		</div>
+		
 	</div>
+	
 </template>
-<script>	
+<script setup>
+	import ContextMenu from '@imengyu/vue3-context-menu'
+	defineProps({
+		directory: {
+			type: [Object, null],
+			required: false
+		},
+		shortcut_dragged: {
+			type: [Object, null],
+			required: false
+		},
+		current:{
+			type: [Boolean, null],
+			required: false
+		}
+	});
+</script>
+<script>
 	export default {
 		data() {
 			return {
-				icon_url: "",
-			}
-		},
-		mounted() {
-			if (chrome && chrome.storage && this.shortcut){
-				this.icon_url = this.get_faviconURL(this.shortcut.url)
+				isDragover: false,
 			}
 		},
 		methods: {
-			dragStart() {
-				this.$emit('shortcut_dragstart',  this.shortcut);
+			onDragEnter(ev) {
+				this.isDragover = true;
 			},
-			dragEnd() {
-				this.$emit('shortcut_dragend',  this.shortcut);
+			onDragLeave(ev) {
+				this.isDragover = false;
+			},
+			dropShortcut(ev) {
+				this.isDragover = false;
+				if(this.shortcut_dragged){
+					this.$emit('shortcut_dropped', this.directory);
+				}
+			},
+			handleClick() {
+				var that = this;
+				this.$emit('eclick', this.directory);
 			},
 			edit() {
-				this.$emit('edit',  this.shortcut);
+				this.$emit('edit', this.directory);
 			},
-			remove() {
-				this.$emit('remove',  this.shortcut);
-			},
-			get_faviconURL(u) {
-				if (chrome && chrome.storage){
-					const url = new URL(chrome.runtime.getURL('/_favicon/'));
-					url.searchParams.set('pageUrl', u); // this encodes the URL as well
-					url.searchParams.set('size', '32');
-					return url.toString();	
-				}
+			remove(d) {
+				this.$emit('remove',  this.directory);
 			},
 			show_option(e){
 				var that = this;
@@ -97,4 +116,12 @@
 			}
 		}
 	}
-</script>	
+</script>
+<style>
+	.option-button{
+		opacity: 0;
+	}
+	.directory-w:hover .option-button{
+		opacity: 1;
+	}
+</style>

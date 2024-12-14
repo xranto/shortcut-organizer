@@ -93,14 +93,14 @@
 					theme: 'flat',
 					items: [
 						{ 
-							label: this.t("ctxMenuEdit"), 
+							label: chrome.i18n.getMessage("ctxMenuEdit"), 
 							svgIcon: "#edit",
 							onClick: () => {
 								that.edit();
 							}
 						},
 						{ 
-							label: this.t("ctxMenuDelete"), 
+							label: chrome.i18n.getMessage("ctxMenuDelete"), 
 							svgIcon: "#delete",
 							onClick: () => {
 								that.remove();
