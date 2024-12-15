@@ -32,7 +32,9 @@
 - Shortcuts automatically fetch website icons for a clean and aesthetic look.  
 
 ### **Languages**  
-🇫🇷 French and 🇬🇧 English support, adapting the interface to your preferred language.  
+![French](https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg) French  
+![English](https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg) English
+
 
 ### **Future Ideas**
 - Advanced theme customization.  
