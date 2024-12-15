@@ -3,29 +3,38 @@
 
 **Shortcut Organizer** est une extension Chrome conçue pour offrir une page de démarrage personnalisée et fonctionnelle. Elle permet de regrouper vos sites web favoris dans des dossiers organisés, avec une interface moderne et intuitive. Grâce à des fonctionnalités comme le drag & drop et la gestion des raccourcis, elle facilite l'accès rapide à vos contenus préférés tout en vous permettant de structurer votre tableau de bord selon vos besoins.
 
+
+👉 **[Disponible sur le Chrome Web Store](https://chromewebstore.google.com/detail/shortcut-organizer/olbkpagnnfedofboaojkldnlllangkia)**
+
+
 ---
 
-## Fonctionnalités
+## **Fonctionnalités**
 
 ### **Gestion des dossiers**
-- **Créer un nouveau dossier**.
-- **Renommer les dossiers existants**.
-- Trier et réorganiser les dossiers par **drag & drop**.
+- Créez un nouveau dossier.  
+- Renommez les dossiers existants.  
+- Triez et réorganisez les dossiers par **drag & drop**.  
 
 ### **Gestion des raccourcis**
-- **Ajouter un raccourci** en fournissant un label et une URL.
-- **Modifier les raccourcis existants**.
-- Trier et réorganiser les raccourcis par **drag & drop**.
-- **Déplacer un raccourci** d’un dossier à un autre via **drag & drop**.
-- Ajouter un raccourci directement en cliquant sur une icône dans la barre de navigation.
+- Ajoutez un raccourci en fournissant un label et une URL.  
+- Modifiez les raccourcis existants.  
+- Triez et réorganisez les raccourcis par **drag & drop**.  
+- Déplacez un raccourci d’un dossier à un autre via **drag & drop**.  
+- Ajoutez un raccourci directement en cliquant sur une icône dans la barre de navigation.  
+
+### **Personnalisation**
+- Remplacez l’image de fond pour adapter la page à votre style.  
+- Activez ou désactivez une barre de recherche.  
+- Choisissez votre moteur de recherche préféré pour une expérience adaptée.  
 
 ### **Icônes automatiques**
-- Les raccourcis récupèrent automatiquement l’icône du site web pour une présentation visuelle claire et esthétique.
+- Les raccourcis récupèrent automatiquement l’icône du site web pour une présentation visuelle claire et esthétique.  
 
 ### **Idées futures**
-- Personnalisation du thème ou de l’arrière-plan.
-- Import/export des raccourcis pour les sauvegarder ou les partager.
-- Synchronisation des raccourcis avec un compte Google.
+- Personnalisation avancée du thème ou de l’arrière-plan.  
+- Import/export des raccourcis pour les sauvegarder ou les partager.  
+- Synchronisation des raccourcis avec un compte Google.  
 
 ---
 
