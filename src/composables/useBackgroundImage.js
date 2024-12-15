@@ -9,7 +9,6 @@ export function useBackgroundImage() {
 		const blob = await getImage('backgroundImage');
 		if (blob) {
 			backgroundUrl.value = URL.createObjectURL(blob);
-			console.log(blob)
 		}
 	}
 

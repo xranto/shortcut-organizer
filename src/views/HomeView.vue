@@ -219,7 +219,6 @@
 					if (items && items.categories){
 						this.categories_data = items.categories;
 						if(this.categories_data.length){
-							console.log(this.categories_data);
 							switch (this.startpage){
 								case "last-dir":
 									const foundItem = this.categories_data.find(item => item.id === last_dir_id);

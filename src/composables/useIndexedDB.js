@@ -12,17 +12,14 @@ export function useIndexedDB() {
 				const db = event.target.result;
 				if (!db.objectStoreNames.contains(storeName)) {
 					db.createObjectStore(storeName, { keyPath: 'id' });
-					console.log(`Object store "${storeName}" created.`);
 				}
 			};
 
 			request.onsuccess = (event) => {
-				console.log('IndexedDB initialized successfully.');
 				resolve(event.target.result);
 			};
 
 			request.onerror = (event) => {
-				console.error('Error initializing IndexedDB:', event.target.error);
 				reject(event.target.error);
 			};
 		});
