@@ -32,9 +32,8 @@
 - Shortcuts automatically fetch website icons for a clean and aesthetic look.  
 
 ### **Languages**  
-![French](https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg) French  
-![English](https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg) English
-
+<img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="French" width="20"/> French  
+<img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="English" width="20"/> English
 
 ### **Future Ideas**
 - Advanced theme customization.  
