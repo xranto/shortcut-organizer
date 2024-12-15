@@ -1,120 +1,124 @@
 
+---
+
 # Shortcut Organizer
 
-**Shortcut Organizer** est une extension Chrome conçue pour offrir une page de démarrage personnalisée et fonctionnelle. Elle permet de regrouper vos sites web favoris dans des dossiers organisés, avec une interface moderne et intuitive. Grâce à des fonctionnalités comme le drag & drop et la gestion des raccourcis, elle facilite l'accès rapide à vos contenus préférés tout en vous permettant de structurer votre tableau de bord selon vos besoins.
+**Shortcut Organizer** is a Chrome extension designed to provide a personalized and functional start page. It allows you to group your favorite websites into organized folders with a modern and intuitive interface. Featuring drag-and-drop and shortcut management functionalities, it simplifies quick access to your favorite content while letting you structure your dashboard to suit your needs.
 
-
-👉 **[Disponible sur le Chrome Web Store](https://chromewebstore.google.com/detail/shortcut-organizer/olbkpagnnfedofboaojkldnlllangkia)**
-
+👉 **[Available on the Chrome Web Store](https://chromewebstore.google.com/detail/shortcut-organizer/olbkpagnnfedofboaojkldnlllangkia)**
 
 ---
 
-## **Fonctionnalités**
+## **Features**
 
-### **Gestion des dossiers**
-- Créez un nouveau dossier.  
-- Renommez les dossiers existants.  
-- Triez et réorganisez les dossiers par **drag & drop**.  
+### **Folder Management**
+- Create new folders.  
+- Rename existing folders.  
+- Sort and reorganize folders using **drag and drop**.  
 
-### **Gestion des raccourcis**
-- Ajoutez un raccourci en fournissant un label et une URL.  
-- Modifiez les raccourcis existants.  
-- Triez et réorganisez les raccourcis par **drag & drop**.  
-- Déplacez un raccourci d’un dossier à un autre via **drag & drop**.  
-- Ajoutez un raccourci directement en cliquant sur une icône dans la barre de navigation.  
+### **Shortcut Management**
+- Add shortcuts with custom labels and URLs.  
+- Edit existing shortcuts.  
+- Sort and reorganize shortcuts using **drag and drop**.  
+- Move shortcuts between folders with **drag and drop**.  
+- Add shortcuts directly by clicking an icon in the navigation bar.  
 
-### **Personnalisation**
-- Remplacez l’image de fond pour adapter la page à votre style.  
-- Activez ou désactivez une barre de recherche.  
-- Choisissez votre moteur de recherche préféré pour une expérience adaptée.  
+### **Customization**
+- Replace the background image to match your style.  
+- Enable or disable a search bar.  
+- Choose your preferred search engine for a tailored experience.  
 
-### **Icônes automatiques**
-- Les raccourcis récupèrent automatiquement l’icône du site web pour une présentation visuelle claire et esthétique.  
+### **Automatic Icons**
+- Shortcuts automatically fetch website icons for a clean and aesthetic look.  
 
-### **Idées futures**
-- Personnalisation avancée du thème ou de l’arrière-plan.  
-- Import/export des raccourcis pour les sauvegarder ou les partager.  
-- Synchronisation des raccourcis avec un compte Google.  
+### **Languages**  
+🇫🇷 French and 🇬🇧 English support, adapting the interface to your preferred language.  
 
----
-
-## Prérequis
-
-Avant de commencer, assurez-vous d'avoir :
-1. **Node.js** version 18 ou plus ([Télécharger Node.js](https://nodejs.org)).
-2. **Navigateur Chrome** (version 88 ou supérieure recommandée).
+### **Future Ideas**
+- Advanced theme customization.  
+- Import/export shortcuts for backup or sharing.  
+- Shortcut synchronization with a Google account.  
 
 ---
 
-## Installation et Utilisation
+## Prerequisites
 
-### Étapes d'installation (Mode développeur)
+Before you begin, make sure you have:  
+1. **Node.js** version 18 or later ([Download Node.js](https://nodejs.org)).  
+2. **Google Chrome browser** (version 88 or later recommended).  
 
-1. Clonez ou téléchargez ce dépôt :
+---
+
+## Installation and Usage
+
+### Installation Steps (Developer Mode)
+
+1. Clone or download this repository:
    ```bash
    git clone https://github.com/xranto/shortcut-organizer.git
    cd shortcut-organizer
    ```
-2. Installez les dépendances nécessaires :
+2. Install the required dependencies:
    ```bash
    npm install
    ```
-3. Pour lancer le mode développement et tester localement :
+3. To launch the development mode and test locally:
    ```bash
    npm run build
    ```
-4. Accédez à [chrome://extensions](chrome://extensions) dans votre navigateur Chrome.
-5. Activez le **mode développeur** (coin supérieur droit).
-6. Cliquez sur **Charger l'extension non empaquetée**.
-7. Sélectionnez le dossier `dist`.
+4. Go to [chrome://extensions](chrome://extensions) in your Chrome browser.  
+5. Enable **Developer Mode** (top right corner).  
+6. Click **Load unpacked extension**.  
+7. Select the `dist` folder.  
 
+### Version Management
 
-### Gestion de la version
+The extension includes an automatic versioning feature for the `manifest.json` file:
 
-L'extension utilise une fonctionnalité de versioning automatique pour le fichier `manifest.json` :
-
-- À chaque exécution de la commande `npm run build`, la version spécifiée dans le fichier `manifest.json` est automatiquement incrémentée.
-- Un message s'affiche pour confirmer si l'utilisateur souhaite incrémenter la version ou la laisser inchangée.
-
----
-
-## Technologies utilisées
-
-- **Vue.js 3** : Framework JavaScript pour construire l’interface utilisateur.
-- **Vue Router** : Gestion des routes internes pour la navigation.
-- **Vite** : Outil de build moderne pour un développement rapide.
-- **TailwindCSS** : Framework CSS pour un design élégant et personnalisable.
-- **vuedraggable** : Pour le drag & drop des dossiers et raccourcis.
-- **@imengyu/vue3-context-menu** : Gestion des menus contextuels.
+- Each time you run `npm run build`, the version specified in `manifest.json` is automatically incremented.  
+- A prompt confirms if you want to increment the version or keep it unchanged.  
 
 ---
 
-## Participation
+## Technologies Used
 
-Nous accueillons vos contributions à **Shortcut Organizer** ! Si vous souhaitez participer :
-
-1. **Signalez un problème** : Ouvrez une issue sur le dépôt GitHub.
-2. **Proposez une idée** : Suggérez de nouvelles fonctionnalités ou des améliorations.
-3. **Soumettez une Pull Request** : Assurez-vous de tester vos modifications avant de soumettre une proposition.
-
-Merci de garder un code clair et cohérent pour faciliter les contributions.
-
----
-
-## Crédits
-
-- **Image d'arrière-plan** :  
-  Photo de Johannes Plenio, disponible sur [Pexels](https://www.pexels.com/fr-fr/photo/papier-peint-gris-et-blanc-1103970/).
+- **Vue.js 3**: JavaScript framework for building the user interface.  
+- **Vue Router**: Internal route management for navigation.  
+- **Vite**: Modern build tool for fast development.  
+- **TailwindCSS**: CSS framework for elegant and customizable design.  
+- **vuedraggable**: For drag-and-drop folder and shortcut management.  
+- **@imengyu/vue3-context-menu**: Context menu management.  
 
 ---
 
-## Suggestions et Retours d'Expérience
+## Contribution
 
-Nous valorisons les retours de nos utilisateurs et travaillons continuellement à améliorer Shortcut Organizer.  
-Vous pouvez consulter les [suggestions et retours d'expérience](FEEDBACK.md) pour en savoir plus sur les idées prévues ou proposer vos propres améliorations.
+We welcome your contributions to **Shortcut Organizer**! If you'd like to participate:  
+
+1. **Report an issue**: Open an issue on the GitHub repository.  
+2. **Propose an idea**: Suggest new features or improvements.  
+3. **Submit a Pull Request**: Be sure to test your changes before submitting.  
+
+Please keep your code clear and consistent to facilitate collaboration.  
 
 ---
 
-## Licence
+## Credits
 
-Ce projet est distribué sous la licence [MIT](https://opensource.org/licenses/MIT).
+- **Background Image**:  
+  Photo by Johannes Plenio, available on [Pexels](https://www.pexels.com/fr-fr/photo/papier-peint-gris-et-blanc-1103970/).  
+
+---
+
+## Suggestions and Feedback
+
+We value user feedback and are constantly working to improve Shortcut Organizer.  
+Check out the [suggestions and feedback](FEEDBACK.md) section to see planned ideas or propose your own.  
+
+---
+
+## License
+
+This project is distributed under the [MIT License](https://opensource.org/licenses/MIT).  
+
+---
