@@ -1,27 +1,26 @@
+# User Feedback and Suggestions
 
-# Feedback et Suggestions des Utilisateurs
+We have gathered several interesting ideas from our users to improve Shortcut Organizer. Here are the suggestions currently being considered for future updates:
 
-Nous avons recueilli plusieurs idées intéressantes de la part de nos utilisateurs pour améliorer Shortcut Organizer. Voici les suggestions actuellement prises en compte pour les futures mises à jour :
+## General Suggestions
+- **Custom Homepage:**  
+  Add a dedicated homepage that displays when a new tab is opened. This page could include closed folders for better organization. *(Suggestion by Émilie)*
 
-## Suggestions Générales
-- **Page d'accueil personnalisée :**  
-  Ajouter une page d'accueil dédiée qui s'affiche lorsqu'un nouvel onglet est ouvert. Cette page pourrait inclure des dossiers fermés pour une meilleure organisation. *(Suggestion d'Émilie)*
+- **Subfolders:**  
+  Enable the creation of subfolders for more advanced organization of shortcuts. *(Suggestions by Émilie and Chloé)*
 
-- **Sous-dossiers :**  
-  Permettre la création de sous-dossiers pour une organisation plus poussée des raccourcis. *(Suggestions d'Émilie et Chloé)*
+## Customization
+- **Change the Wallpaper:**  
+  Allow users to customize the extension's wallpaper to reflect their preferences. *(Suggestion by Chloé)*
 
-## Personnalisation
-- **Changer le fond d'écran :**  
-  Offrir la possibilité de personnaliser le fond d'écran de l'extension pour refléter les préférences des utilisateurs. *(Suggestion de Chloé)*
+## Additional Integrations
+- **Google Search Bar:**  
+  Integrate a Google search bar at the top of the page for quick searches. *(Suggestion by Christian)*
 
-## Intégrations Supplémentaires
-- **Barre de recherche Google :**  
-  Intégrer une barre de recherche Google en haut de la page pour faciliter les recherches rapides. *(Suggestion de Christian)*
+## Functional Improvements
+- **Open Links in a New Tab:**  
+  Configure links to open in a new tab to keep the main page accessible. *(Suggestion by Christian)*
 
-## Améliorations Fonctionnelles
-- **Ouverture des liens dans un nouvel onglet :**  
-  Configurer l'ouverture des liens dans un nouvel onglet pour permettre de conserver la page principale ouverte. *(Suggestion de Christian)*
-
-## Notes Techniques
-- **Compatibilité avec Enhanced Safe Browsing :**  
-  Améliorer la conformité de l'extension pour qu'elle soit reconnue comme fiable par les paramètres de navigation sécurisée améliorée de Chrome. *(Suggestion de Chloé)*
+## Technical Notes
+- **Compatibility with Enhanced Safe Browsing:**  
+  Improve the extension’s compliance to be recognized as trusted by Chrome’s Enhanced Safe Browsing settings. *(Suggestion by Chloé)*
