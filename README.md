@@ -42,6 +42,17 @@
 
 ---
 
+## Deprecated Features
+
+### Search Bar  
+*The search bar has been rejected by Google due to a violation of the "Red Argon" policy.*  
+
+- **Status**: Removed in version `1.0.19`  
+- **Reason**: Violation of Google Chrome Web Store policies  
+- **Archive**: This feature is available in the `archive/search` branch for future reference.  
+
+---
+
 ## Prerequisites
 
 Before you begin, make sure you have:  
