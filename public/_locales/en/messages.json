@@ -190,25 +190,5 @@
 	},
 	"setFileOverSize": {
 		"message": "The file is too large. The maximum size is 5 MB."
-	},
-	"setSearchBar": {
-		"message": "Search bar"
-	},
-	"setShowSearchBar": {
-		"message": "Show"
-	},
-	"setShowSearchBarMsg": {
-		"message": "Show the search bar."
-	},
-	"setHideSearchBar": {
-		"message": "Hide"
-	},
-	"setHideSearchBarMsg": {
-		"message": "Hide the search bar."
-	},
-	"setSearchEngine": {
-		"message": "Search engine"
 	}
-
-
 }

@@ -44,14 +44,13 @@
 							</li>
 						</ul>
 						<button v-on:click="show_about_dlg" class="w-full text-gray-400 mb-3 text-left">{{ t('menuAbout') }}</button>
-						<RouterLink to="/setting" class="w-full text-gray-400 mb-3 text-left">{{ t('menuSetting') }}</RouterLink>
+						<RouterLink to="/setting/personalization" class="w-full text-gray-400 mb-3 text-left">{{ t('menuSetting') }}</RouterLink>
 					</nav>
 				</div>
 			</div>
 			<main class="py-10 pl-52">
 				<div class="px-4 sm:px-6 lg:px-8">
-					<SearchBar v-if="showsearch" />
-					{{ bgimage_url }}
+					
 					<!-- Directory List -->
 					<div v-if="current_directory == null && startpage == 'dir-list'">
 						<div>
@@ -127,7 +126,6 @@
 	import DialogShortcut from '../components/DialogShortcut.vue'
 	import DialogAbout from '../components/DialogAbout.vue'
 	import Icon from '../components/Icon.vue'
-	import SearchBar from '../components/SearchBar.vue'
 	import { isProxy, toRaw } from 'vue';
 	import draggable from 'vuedraggable'
 	
@@ -137,7 +135,7 @@
 	import { useBackgroundImage } from '../composables/useBackgroundImage';
 	export default {
 		components: {
-			DirectoryIcon, Directory, DialogDirectory, DialogShortcut, Icon, draggable, DialogAbout, SearchBar
+			DirectoryIcon, Directory, DialogDirectory, DialogShortcut, Icon, draggable, DialogAbout
 		},
 		data() {
 			return {

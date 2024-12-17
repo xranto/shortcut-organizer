@@ -6,7 +6,7 @@ import HomeView from '../views/HomeView.vue'
 import SettingView from '../views/SettingView.vue'
 import SettingIndex from '../views/SettingView/Index.vue'
 import Personalization from '../views/SettingView/Personalization.vue'
-import Search from '../views/SettingView/Search.vue'
+
 
 export const router = createRouter({
 	history: createWebHashHistory(), 
@@ -30,11 +30,6 @@ export const router = createRouter({
 					path: 'personalization',
 					name: 'personalization',
 					component: Personalization
-				},
-				{
-					path: 'search',
-					name: 'search',
-					component: Search
 				}
 			]
 		}
